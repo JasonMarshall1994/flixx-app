@@ -4,7 +4,6 @@ const global = {
 
 async function displayPopularMovies() {
   const { results } = await fetchAPIData('movie/popular');
-  console.log(results);
   results.forEach((movie) => {
     const div = document.createElement('div');
     div.classList.add('card');
